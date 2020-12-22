@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# PiHole Switch Plus Version 0.5
+# By Marc-André Tragé 2020 free 4 all
+
+if [ ! $1 ]
+  then
+  notify-send 'PiHole ERROR' 'The PiHole IP is required!' --icon=dialog-error
+  exit 1
+fi
+
+PIHOLE_STATUS=/tmp/PIHOLE_STATUS_ON
+  if [ -f "$PIHOLE_STATUS" ];
+    then
+      rm /tmp/PIHOLE_STATUS_ON
+      phs --host $1 enable
+      notify-send 'PiHole' 'has been successfully activated!' --icon=dialog-information
+    else
+      touch /tmp/PIHOLE_STATUS_ON
+      phs --host $1 disable
+      notify-send 'PiHole' 'has been successfully deactivated!' --icon=dialog-information
+  fi
+
+exit
