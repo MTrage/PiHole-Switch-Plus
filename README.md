@@ -22,7 +22,7 @@
 
     cat /etc/pihole/setupVars.conf | grep "WEBPASSWORD=" | awk -F'=' '{for (i=2; i<=NF; i++) printf("%s\n", $i)}'
     
-#### You now call your .bashrc file e.g. with nano (on your work PC).
+#### Start an editor (e.g. with nano) and open the .bashrc file (on your work PC).
 
     nano ~/.bashrc
     
