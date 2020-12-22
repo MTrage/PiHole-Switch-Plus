@@ -1,5 +1,6 @@
 # PiHole Switch Plus (Linux only)
 ## On-off switch for PiHole using the pihole-switch by Cosimo Matteini.
+### With PiHole Switch Plus you can turn the pihole-switch into a one-button-solution!
 
 
 #### The first thing to do is to install the pihole-switch, it can be found under https://github.com/devmatteini/pihole-switch
