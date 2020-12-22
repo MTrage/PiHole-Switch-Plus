@@ -2,7 +2,7 @@
 ## On-off switch for PiHole using the pihole-switch by Cosimo Matteini.
 
 
-#### The first thing to do is to install the pihole-switch, it can be found underhttps://github.com/devmatteini/pihole-switch
+#### The first thing to do is to install the pihole-switch, it can be found under https://github.com/devmatteini/pihole-switch
 
 #### If you already have pihole-switch installed and running, you can use pihole-switch-plus as follows.
 #### To make the script directly executable:
